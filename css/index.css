@@ -1,0 +1,298 @@
+
+*{
+    padding:0;
+    margin:0;
+}
+.body-siku{
+    background: #00b786;
+    overflow: hidden;
+    position: relative;
+}
+.siku-wrapper {
+    background: #ccc;
+    padding-top: 12px;
+}
+
+.nav {
+    position: relative;
+}
+
+.nav .right {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.person-level {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 6%;
+    margin-top: 30px;
+}
+
+.person-level .icon img {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+}
+
+.info {
+    margin-left: 20px;
+}
+
+.info p {
+    margin-bottom: 2px;
+}
+
+.swiper-card {
+    margin: 20px 0;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-transition: transform 1s;
+    transition: transform 1s;
+    -webkit-transform: scale(.85);
+    transform: scale(.85);
+
+}
+
+.swiper-slide.swiper-slide-active {
+    -webkit-transform: scale(1.15);
+    transform: scale(1.15);
+}
+
+.swiper-card img {
+    width: 100%;
+}
+
+.rights--content>div {
+    display: none;
+    /* background: #fff; */
+}
+
+
+
+/* 整个弹框最外层 */
+
+.circleWrapper {
+    width: 70%;
+    height: 70%;
+    border-radius: 100%;
+    position: relative;
+    margin: 40px auto;
+}
+
+ul.circleWrapper {
+    list-style-type: none;
+    padding: 0;
+    display: block;
+}
+
+ul.circleWrapper li {
+    display: block;
+}
+
+/* 每个圆的大小 */
+.circleFeature {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    cursor: pointer;
+    border-radius: 100%;
+    text-align: center;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -ms-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    transition: all 0.8s;
+    z-index: 2;
+    width: 20%;
+    height: 20%;
+}
+
+
+/* 弹框内容  */
+.circleBox {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top:0;
+    bottom:0;
+    display: none;
+    background:rgba(0,0,0,.4);
+    z-index: 99;
+}
+.circleBox .details{
+    position:absolute;
+    left:0;
+    top:0;
+    background: #fff;
+    color:#444;
+    z-index: 100;
+}
+
+
+/* 
+ul.circleWrapper li:first-child .circleBox {
+    display: block;
+} */
+
+.circleSelect {
+    padding: 6px;
+    box-sizing: content-box;
+}
+
+.circleFeature span {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.fStyle1 {
+    background-color: rgb(250, 132, 64);
+    color: #fff;
+    font-weight: 600;
+}
+
+.circle2 {
+    box-sizing: border-box;
+}
+
+.fStyle2 {
+    background: #fff;
+    border: 2px dotted #aaa;
+}
+
+.wStyle2 {
+    border: 2px dotted #aaa;
+}
+
+.innerStyle2 {
+    background-color: #f9f9f9;
+    width: 70% !important;
+    height: 70% !important;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    padding: 15% 22px;
+}
+
+.innerStyle3 {
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.circleSelect3 {
+    background-color: #bf1e2c;
+}
+
+.fStyle4 {
+    background-color: #00b786;
+    color: #fff;
+}
+
+.fStyle4 span {
+    font-size: 23px;
+}
+
+.wStyle4 {
+    border: 2px solid #00b786;
+}
+
+.circleSelect4:after {
+    content: "";
+    width: 80%;
+    height: 80%;
+    border: 2px solid #fff;
+    position: absolute;
+    z-index: 999;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+
+.inner-circle {
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    margin: auto;
+    border-radius: 100%;
+    overflow: hidden;
+    right: 0;
+    left: 0;
+    top: 32%;
+    text-align: center;
+    background: #bf1e2c;
+}
+.inner-circle  {
+    -webkit-animation:grow 0.5s;
+    animation:grow 0.5s;
+  
+  }
+  
+  @-webkit-keyframes grow {
+   0% {
+      -webkit-transform: scale( 0 );
+      -moz-transform: scale( 0 );
+      -o-transform: scale( 0 );
+      -ms-transform: scale( 0 );
+      transform: scale( 0 );
+    }
+    
+    100% {
+    -webkit-transform: scale( 1 );
+    -moz-transform: scale( 1 );
+    -o-transform: scale( 1 );
+    -ms-transform: scale( 1 );
+    transform: scale( 1 );
+    }
+  }
+  @keyframes grow {
+    0% {
+       -webkit-transform: scale( 0 );
+       -moz-transform: scale( 0 );
+       -o-transform: scale( 0 );
+       -ms-transform: scale( 0 );
+       transform: scale( 0 );
+     }
+     
+     100% {
+     -webkit-transform: scale( 1 );
+     -moz-transform: scale( 1 );
+     -o-transform: scale( 1 );
+     -ms-transform: scale( 1 );
+     transform: scale( 1 );
+     }
+   }

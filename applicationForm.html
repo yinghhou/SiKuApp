@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/applicationForm.css">
+</head>
+
+<body>
+    <div class="application-form container">
+        <div class="header">
+            填写申请表
+        </div>
+        <div class="page-header">
+                <p>Example page header <small>Subtext for header</small></p>
+              </div>
+        <div class="panel-group" id="accordion">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                            点击我进行展
+
+                        </a>
+                        <span class="glyphicon glyphicon-chevron-down down"></span>
+                    </h4>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        Nihil anim keffiyeh helvetica, craft beer labore wes anderson
+                        cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
+                        vice lomo.
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                            第 2 部分
+                        </a>
+                        <span class="glyphicon glyphicon-chevron-down down"></span>
+                    </h4>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        Nihil anim keffiyeh helvetica, craft beer labore wes anderson
+                        cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
+                        vice lomo.
+                    </div>
+                </div>
+            </div>
+            <div data-toggle="distpicker">
+                    <select data-province="---- 选择省 ----"></select>
+                    <select data-city="---- 选择市 ----"></select>
+                    <select data-district="---- 选择区 ----"></select>
+                  </div>
+            
+        </div>
+    </div>
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/bootstrap.min.js"> </script>
+    <script src="js/distpicker.min.js">
+
+    </script>
+    <script>
+        $(".panel-group .panel-title a").click(function () {
+            var flag = $(this).parents(".panel-heading").next().hasClass("in");
+            $(".panel-group").find(".down").removeClass("up");
+            if (!flag) {
+                $(this).parents(".panel").find(".down").addClass("up")
+            }
+
+        })
+
+
+        $("#distpicker1").distpicker();
+    </script>
+</body>
+
+</html>
