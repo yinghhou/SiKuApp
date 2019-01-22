@@ -1,0 +1,65 @@
+.siku-wrapper{
+	width: 100%;
+}
+.header{
+	position: fixed;
+	height: 50px;
+	width: 100%;
+	top: 0;
+	z-index: 10;
+	background-color: #ffffff;
+}
+.back{
+	position: absolute;
+	top: 50%;
+	left: 10px;
+	margin-top: -7px;
+}
+.header>p{
+	width: 100%;
+	line-height: 50px;
+	text-align: center;
+	font-size: 17px;
+}
+.list-body{
+	width: 100%;
+	margin-top: 60px;
+	margin-bottom: 70px;
+}
+.collapse-block{
+	width: 90%;
+	margin: 10px auto 0 auto !important;
+}
+.title{
+	position: relative;
+	/*height: 30px;*/
+}
+.panel-title{
+	line-height: 30px;
+}
+.view-more{
+	position: absolute;
+	top: 17px;
+	right: 18px;
+}
+.list-bottom{
+	width: 100%;
+	height: 70px;
+	position: fixed;
+	background-color: #ffffff;
+	bottom: 0;
+}
+.bottom-button{
+	width: 95%;
+	height: 50px;
+	margin: 10px auto 10px auto;
+	background-color: #f0f0f0;
+	border-radius: 4px;
+}
+.bottom-button>p{
+	line-height: 50px;
+	width: 100%;
+	text-align: center;
+}
+
+
