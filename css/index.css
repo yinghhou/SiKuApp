@@ -1,6 +1,6 @@
 html {
     font-size: 62.5%;
-    -webkit-text-size-adjust:none; 
+    -webkit-text-size-adjust: none;
 }
 
 * {
@@ -114,7 +114,7 @@ html {
 .content-1 .header {
     font-size: 11px;
     color: #999;
-    margin-top:3%;
+    margin-top: 3%;
 }
 
 
@@ -302,8 +302,8 @@ ul.circleWrapper li:first-child .circleBox {
 
 .inner-circle {
     position: absolute;
-    width: 30%;
-    height: 30%;
+    width: 35%;
+    height: 35%;
     margin: auto;
     border-radius: 100%;
     overflow: hidden;
@@ -311,7 +311,8 @@ ul.circleWrapper li:first-child .circleBox {
     left: 0;
     top: 32%;
     text-align: center;
-    background: #bf1e2c;
+    background: #FFFFFF;
+    box-shadow: 0 0 8px 1px rgba(178, 158, 114, 0.55);
 }
 
 .inner-circle {
