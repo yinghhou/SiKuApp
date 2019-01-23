@@ -20,7 +20,7 @@ window.onload = function () {
     var mySwiper = new Swiper('.swiper-container', {
         slidesPerView: '2',
         centeredSlides: true,
-        spaceBetween: 20,
+        spaceBetween: 80,
         autoplayDisableOnInteraction: false,
         loop: true,
         pagination: {

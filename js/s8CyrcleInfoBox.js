@@ -12,7 +12,6 @@
             hoverStyle:"circleSelect",     // Get Your Css class for hover Style
             spreadStyle: "all"            // the style of spreading the bubbles Top,lef,right,bottom
         }, options);
-        console.log(settings);
         var $container = $(this).find(".circleWrapper"),
             $fields = $container.find(".circleFeature"),
             fieldsLength = $fields.length,

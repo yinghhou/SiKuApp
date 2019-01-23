@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/common.css">
 </head>
 
 <body class="body-siku">
@@ -16,43 +17,47 @@
         <div class="container">
             <div class="nav">
                 <span class="glyphicon glyphicon-menu-left"></span>
-                <span class="glyphicon glyphicon-cog right"></span>
+                <!-- <span class="glyphicon glyphicon-cog right"></span> -->
             </div>
             <div class="person-level">
                 <div class="icon">
-                    <img src="images/icon.png" alt="">
+                    <img src="images/profile.png" alt="">
                 </div>
                 <div class="info">
-                    <p>Ray</p>
-                    <p>Q344</p>
-                    <p>Q344</p>
+                    <p class="name common-black">Ray</p>
+                    <p class="card-level common-black"> <img src="images/Rectangle.png" alt="" width="12px"> Q344</p>
                 </div>
             </div>
         </div>
 
         <div class="swiper-container swiper-card">
             <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="images/b1.png" alt="">
+                <div class="swiper-slide swiper-slide-1">
+                    <img src="images/list1.png" alt="">
                     <p></p>
                 </div>
                 <div class="swiper-slide swiper-slide-active">
-                    <img src="images/b2.png" alt="">
+                    <img src="images/list1.png" alt="">
                 </div>
                 <div class="swiper-slide">
-                    <img src="images/b3.png" alt="">
+                    <img src="images/list1.png" alt="">
                 </div>
             </div>
         </div>
         <div class="rights-content">
             <div class="content-1  container">
                 <p class="header text-center">
-                    寺库会员
+                    尊敬的寺库会员，<br />
+                    成为花旗财富管理客户即可享以下专属定制权益
                 </p>
                 <div class="circle1">
                     <ul class="circleWrapper wStyle1">
                         <li>
-                            <div class="circleFeature fStyle1" data-cyrcleBox="f1">Box1</div>
+                            <div class="circleFeature fStyle1" data-cyrcleBox="f1">
+                                <p>
+                                    环球<br />优势
+                                </p>
+                            </div>
                             <div class="circleBox" id="f1">
                                 <div class="panel panel-default details">
                                     <div class="panel-heading">面板标题11111 <span class="glyphicon glyphicon-remove"></span></div>
@@ -77,7 +82,12 @@
                             </div>
                         </li>
                         <li>
-                            <div class="circleFeature fStyle1" data-cyrcleBox="f2">Box2</div>
+                            <div class="circleFeature fStyle2" data-cyrcleBox="f2">
+                                <p>
+                                    贵宾专
+                                    <br />属礼遇
+                                </p>
+                            </div>
                             <div class="circleBox" id="f2">
                                 <div class="panel panel-default details">
                                     <div class="panel-heading">面板标题222222 <span class="glyphicon glyphicon-remove"></span></div>
@@ -101,7 +111,12 @@
                             </div>
                         </li>
                         <li>
-                            <div class="circleFeature fStyle1" data-cyrcleBox="f3">Box3</div>
+                            <div class="circleFeature fStyle1" data-cyrcleBox="f3">
+                                <p>
+                                    财富
+                                    <br />洞察
+                                </p>
+                            </div>
                             <div class="circleBox" id="f3">
                                 <div class="panel panel-default details">
                                     <div class="panel-heading">面板标题33333 <span class="glyphicon glyphicon-remove"></span></div>
@@ -124,24 +139,42 @@
                             </div>
                         </li>
                         <li>
-                            <div class="circleFeature fStyle1" data-cyrcleBox="f4">Box4</div>
+                            <div class="circleFeature fStyle1" data-cyrcleBox="f4">
+                                <p>
+                                    专业咨<br />询服务
+                                </p>
+                            </div>
                             <div class="circleBox" id="f4">
                                 44444444
                             </div>
                         </li>
                         <li>
-                            <div class="circleFeature fStyle1" data-cyrcleBox="f5">Box5</div>
+                            <div class="circleFeature fStyle2" data-cyrcleBox="f5">
+                                <p>
+                                    财富
+                                    <br />规划
+                                </p>
+                            </div>
                             <div class="circleBox" id="f5">
 
                             </div>
                         </li>
                         <li>
-                            <div class="circleFeature fStyle1" data-cyrcleBox="f6">Box6</div>
+                            <div class="circleFeature fStyle1" data-cyrcleBox="f6">
+                                <p>
+                                    精英理<br />财团队
+                                </p>
+                            </div>
                             <div class="circleBox" id="f6">
                             </div>
                         </li>
                         <li>
-                            <div class="circleFeature fStyle1" data-cyrcleBox="f7">Box7</div>
+                            <div class="circleFeature fStyle2" data-cyrcleBox="f7">
+                                <p>
+                                    开户
+                                    <br />好礼
+                                </p>
+                            </div>
                             <div class="circleBox" id="f7">
                             </div>
                         </li>
@@ -149,16 +182,274 @@
                 </div>
             </div>
             <div class="content-2 container">
-                content-2
+                <div class="circle1">
+                    <ul class="circleWrapper wStyle1">
+                        <li>
+                            <div class="circleFeature fStyle1" data-cyrcleBox="f1">
+                                <p>
+                                    环球<br />优势
+                                </p>
+                            </div>
+                            <div class="circleBox" id="f1">
+                                <div class="panel panel-default details">
+                                    <div class="panel-heading">面板标题11111 <span class="glyphicon glyphicon-remove"></span></div>
+                                    <div class="panel-body">
+                                        <p>这是一个基本的面板内容。这是一个基本的面板内容。
+                                            这是一个基本的面板内容。这是一个基本的面板内容。
+                                            这是一个基本的面板内容。这是一个基本的面板内容。
+                                            这是一个基本的面板内容。这是一个基本的面板内容。
+                                        </p>
+                                    </div>
+                                    <div class="panel-heading">面板标题</div>
+                                    <div class="panel-body">
+                                        <p>这是一个基本的面板内容。这是一个基本的面板内容。
+                                            这是一个基本的面板内容。这是一个基本的面板内容。
+                                            这是一个基本的面板内容。这是一个基本的面板内容。
+                                            这是一个基本的面板内容。这是一个基本的面板内容。
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="inner-circle">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="circleFeature fStyle2" data-cyrcleBox="f2">
+                                <p>
+                                    贵宾专
+                                    <br />属礼遇
+                                </p>
+                            </div>
+                            <div class="circleBox" id="f2">
+                                <div class="panel panel-default details">
+                                    <div class="panel-heading">面板标题222222 <span class="glyphicon glyphicon-remove"></span></div>
+                                    <div class="panel-body">
+                                        <p>这是一个基本的面板内容。这是一个基本的面板内容。
+                                            这是一个基本的面板内容。这是一个基本的面板内容。
+                                            这是一个基本的面板内容。这是一个基本的面板内容。
+                                            这是一个基本的面板内容。这是一个基本的面板内容。
+                                        </p>
+                                    </div>
+                                    <div class="panel-heading">面板标题</div>
+                                    <div class="panel-body">
+                                        <p>这是一个基本的面板内容。这是一个基本的面板内容。
+                                            这是一个基本的面板内容。这是一个基本的面板内容。
+                                            这是一个基本的面板内容。这是一个基本的面板内容。
+                                            这是一个基本的面板内容。这是一个基本的面板内容。
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li>
+                            <div class="circleFeature fStyle1" data-cyrcleBox="f3">
+                                <p>
+                                    财富
+                                    <br />洞察
+                                </p>
+                            </div>
+                            <div class="circleBox" id="f3">
+                                <div class="panel panel-default details">
+                                    <div class="panel-heading">面板标题33333 <span class="glyphicon glyphicon-remove"></span></div>
+                                    <div class="panel-body">
+                                        <p>这是一个基本的面板内容。这是一个基本的面板内容。
+                                            这是一个基本的面板内容。这是一个基本的面板内容。
+                                            这是一个基本的面板内容。这是一个基本的面板内容。
+                                            这是一个基本的面板内容。这是一个基本的面板内容。
+                                        </p>
+                                    </div>
+                                    <div class="panel-heading">面板标题</div>
+                                    <div class="panel-body">
+                                        <p>这是一个基本的面板内容。这是一个基本的面板内容。
+                                            这是一个基本的面板内容。这是一个基本的面板内容。
+                                            这是一个基本的面板内容。这是一个基本的面板内容。
+                                            这是一个基本的面板内容。这是一个基本的面板内容。
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="circleFeature fStyle1" data-cyrcleBox="f4">
+                                <p>
+                                    专业咨<br />询服务
+                                </p>
+                            </div>
+                            <div class="circleBox" id="f4">
+                                44444444
+                            </div>
+                        </li>
+                        <li>
+                            <div class="circleFeature fStyle2" data-cyrcleBox="f5">
+                                <p>
+                                    财富
+                                    <br />规划
+                                </p>
+                            </div>
+                            <div class="circleBox" id="f5">
+
+                            </div>
+                        </li>
+                        <li>
+                            <div class="circleFeature fStyle1" data-cyrcleBox="f6">
+                                <p>
+                                    精英理<br />财团队
+                                </p>
+                            </div>
+                            <div class="circleBox" id="f6">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="circleFeature fStyle2" data-cyrcleBox="f7">
+                                <p>
+                                    开户
+                                    <br />好礼
+                                </p>
+                            </div>
+                            <div class="circleBox" id="f7">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <div class="content-3 container">
-                Search by username, full name or email address
+                <div class="circle1">
+                    <ul class="circleWrapper wStyle1">
+                        <li>
+                            <div class="circleFeature fStyle1" data-cyrcleBox="f1">
+                                <p>
+                                    环球<br />优势
+                                </p>
+                            </div>
+                            <div class="circleBox" id="f1">
+                                <div class="panel panel-default details">
+                                    <div class="panel-heading">面板标题11111 <span class="glyphicon glyphicon-remove"></span></div>
+                                    <div class="panel-body">
+                                        <p>这是一个基本的面板内容。这是一个基本的面板内容。
+                                            这是一个基本的面板内容。这是一个基本的面板内容。
+                                            这是一个基本的面板内容。这是一个基本的面板内容。
+                                            这是一个基本的面板内容。这是一个基本的面板内容。
+                                        </p>
+                                    </div>
+                                    <div class="panel-heading">面板标题</div>
+                                    <div class="panel-body">
+                                        <p>这是一个基本的面板内容。这是一个基本的面板内容。
+                                            这是一个基本的面板内容。这是一个基本的面板内容。
+                                            这是一个基本的面板内容。这是一个基本的面板内容。
+                                            这是一个基本的面板内容。这是一个基本的面板内容。
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="inner-circle">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="circleFeature fStyle2" data-cyrcleBox="f2">
+                                <p>
+                                    贵宾专
+                                    <br />属礼遇
+                                </p>
+                            </div>
+                            <div class="circleBox" id="f2">
+                                <div class="panel panel-default details">
+                                    <div class="panel-heading">面板标题222222 <span class="glyphicon glyphicon-remove"></span></div>
+                                    <div class="panel-body">
+                                        <p>这是一个基本的面板内容。这是一个基本的面板内容。
+                                            这是一个基本的面板内容。这是一个基本的面板内容。
+                                            这是一个基本的面板内容。这是一个基本的面板内容。
+                                            这是一个基本的面板内容。这是一个基本的面板内容。
+                                        </p>
+                                    </div>
+                                    <div class="panel-heading">面板标题</div>
+                                    <div class="panel-body">
+                                        <p>这是一个基本的面板内容。这是一个基本的面板内容。
+                                            这是一个基本的面板内容。这是一个基本的面板内容。
+                                            这是一个基本的面板内容。这是一个基本的面板内容。
+                                            这是一个基本的面板内容。这是一个基本的面板内容。
+                                        </p>
+                                    </div>
+                                </div>
 
-You’ll only be able to find a GitHub user by their email address if they’ve chosen to list it publicly. Otherwise, use their username instead. 
+                            </div>
+                        </li>
+                        <li>
+                            <div class="circleFeature fStyle1" data-cyrcleBox="f3">
+                                <p>
+                                    财富
+                                    <br />洞察
+                                </p>
+                            </div>
+                            <div class="circleBox" id="f3">
+                                <div class="panel panel-default details">
+                                    <div class="panel-heading">面板标题33333 <span class="glyphicon glyphicon-remove"></span></div>
+                                    <div class="panel-body">
+                                        <p>这是一个基本的面板内容。这是一个基本的面板内容。
+                                            这是一个基本的面板内容。这是一个基本的面板内容。
+                                            这是一个基本的面板内容。这是一个基本的面板内容。
+                                            这是一个基本的面板内容。这是一个基本的面板内容。
+                                        </p>
+                                    </div>
+                                    <div class="panel-heading">面板标题</div>
+                                    <div class="panel-body">
+                                        <p>这是一个基本的面板内容。这是一个基本的面板内容。
+                                            这是一个基本的面板内容。这是一个基本的面板内容。
+                                            这是一个基本的面板内容。这是一个基本的面板内容。
+                                            这是一个基本的面板内容。这是一个基本的面板内容。
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="circleFeature fStyle1" data-cyrcleBox="f4">
+                                <p>
+                                    专业咨<br />询服务
+                                </p>
+                            </div>
+                            <div class="circleBox" id="f4">
+                                44444444
+                            </div>
+                        </li>
+                        <li>
+                            <div class="circleFeature fStyle2" data-cyrcleBox="f5">
+                                <p>
+                                    财富
+                                    <br />规划
+                                </p>
+                            </div>
+                            <div class="circleBox" id="f5">
+
+                            </div>
+                        </li>
+                        <li>
+                            <div class="circleFeature fStyle1" data-cyrcleBox="f6">
+                                <p>
+                                    精英理<br />财团队
+                                </p>
+                            </div>
+                            <div class="circleBox" id="f6">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="circleFeature fStyle2" data-cyrcleBox="f7">
+                                <p>
+                                    开户
+                                    <br />好礼
+                                </p>
+                            </div>
+                            <div class="circleBox" id="f7">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
+          </div>
     </div>
-
+    <div class="common-footer container">
+        <a href="applicationForm.html" class="common-btn">立即申请</a>
+    </div>
 
     <script src="js/jquery-1.11.0.min.js"></script>
     <script src="js/swiper.min.js"></script>

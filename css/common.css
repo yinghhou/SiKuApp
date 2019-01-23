@@ -1,0 +1,20 @@
+/* 公用底部 */
+.common-footer{
+    position: fixed;
+    bottom:0px;
+    height: 48px;
+    line-height: 48px;
+    width: 100%;
+}
+.common-footer .common-btn{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    border-radius: 4px;
+    text-align: center;
+    font-size:16px;
+    color:#fff;
+    letter-spacing: 1px;
+   
+}
