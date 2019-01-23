@@ -194,7 +194,7 @@ ul.circleWrapper li {
 
 .fStyle2 p {
     color: #B4975A;
-    font-size: 14px;
+    font-size: 13px;
 
 }
 
@@ -214,23 +214,49 @@ ul.circleWrapper li {
 
 .circleBox .details {
     position: absolute;
-    left: 0;
-    top: 0;
+    left:20px;
+    right: 20px;
+    top: 50px;
+    bottom: 50px;
+    margin:0 auto;
+    border-radius: 8px;
     background: #fff;
     color: #444;
     z-index: 100;
+    overflow: hidden;
 }
-
+.details-head{
+    font-size: 16px;
+    background: #eee;
+    height: 48px;
+    line-height: 48px;
+    position: relative;
+}
+.details-head .glyphicon-remove{
+    position: absolute;
+    right: 20px;
+    top:50%;
+    transform: translateY(-50%);
+}
+.list-wrapper{
+    max-height: 90%;
+    overflow: auto;
+    padding-top:10px;
+}
+.list-wrapper .list-title{
+    font-size: 16px;
+    margin-bottom: 16px;
+}
 
 /* 
 ul.circleWrapper li:first-child .circleBox {
     display: block;
 } */
 
-.circleSelect {
+/* .circleSelect {
     padding: 6px;
     box-sizing: content-box;
-}
+} */
 
 .circleFeature span {
     vertical-align: middle;
@@ -313,11 +339,17 @@ ul.circleWrapper li:first-child .circleBox {
     text-align: center;
     background: #FFFFFF;
     box-shadow: 0 0 8px 1px rgba(178, 158, 114, 0.55);
-}
-
-.inner-circle {
     -webkit-animation: grow 0.5s;
     animation: grow 0.5s;
+}
+
+.inner-circle>p{
+    position: absolute;
+    top:50%;
+    left:50%;
+    width: 100%;
+    transform: translate(-50%,-50%);
+    color:#B4975A;
 
 }
 

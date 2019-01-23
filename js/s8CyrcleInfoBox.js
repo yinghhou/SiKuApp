@@ -99,7 +99,12 @@
         }
         // On hover over particular circle
         $fields.on(settings.action,function () {
-            if (current != $(this).parent().index() && !underBreakPoint) {
+            // if (current != $(this).parent().index() && !underBreakPoint) {
+            //     $infoBox.fadeOut();
+            //     current = $(this).parent().index();
+            // inflate($(this));
+            // }
+            if (current != !underBreakPoint) {
                 $infoBox.fadeOut();
                 current = $(this).parent().index();
             inflate($(this));
