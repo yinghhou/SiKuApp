@@ -5,6 +5,7 @@
     height: 48px;
     line-height: 48px;
     width: 100%;
+    bottom:10px;
 }
 .common-footer .common-btn{
     display: block;
@@ -16,5 +17,6 @@
     font-size:16px;
     color:#fff;
     letter-spacing: 1px;
+    
    
 }
