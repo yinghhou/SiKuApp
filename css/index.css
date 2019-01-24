@@ -7,15 +7,15 @@ html {
     padding: 0;
     margin: 0;
 }
-
 .body-siku {
     overflow: hidden;
     position: relative;
 }
 
-.siku-wrapper {
-    background: #fff;
+.bg-cover {
     padding-top: 12px;
+    background: url(../images/BG-TOP.png) no-repeat left top;
+    background-size: 100% 80%;
 }
 
 .nav {
@@ -24,6 +24,7 @@ html {
 
 .nav .glyphicon {
     font-size: 16px;
+    color: #fff;
 }
 
 .person-level {
@@ -43,6 +44,7 @@ html {
 .info {
     margin-left: 18px;
     padding-top: 4px;
+    color: #fff;
 }
 
 .info .name {
@@ -52,11 +54,12 @@ html {
 }
 
 .info .card-level img {
-    vertical-align: middle;
+    vertical-align: text-top;
+    width: 13px;
 }
 
 .swiper-card {
-    margin: 10% 0 5%;
+    margin: 8% 0 5%;
 }
 
 .swiper-container {
@@ -88,12 +91,16 @@ html {
     transition: transform 1s;
     -webkit-transform: scale(1.2);
     transform: scale(1.2);
+    box-shadow: 0 9px 16px 0px rgba(185, 185, 185, 0.51);
+
 
 }
 
 .swiper-slide.swiper-slide-active {
     -webkit-transform: scale(1.6);
     transform: scale(1.6);
+
+
 }
 
 .card-title {
@@ -107,14 +114,15 @@ html {
 }
 
 .swiper-card img {
-    width: 100%;
+    width: 105%;
+    height: 110%;
 }
 
 
-.content-1 .header {
+.rights-content .header {
     font-size: 11px;
     color: #999;
-    margin-top: 3%;
+    margin-top: 4%;
 }
 
 
@@ -184,17 +192,23 @@ ul.circleWrapper li {
 .fStyle2 {
     color: #fff;
     font-weight: 600;
-    overflow: hidden;
+    /* overflow: hidden; */
     border: 1px solid #DAC28E;
     width: 30%;
     height: 30%;
-    background-image: linear-gradient(-211deg, #F3EAD4 2%, #E9D8B3 97%);
-    box-shadow: 0 0 8px 1px rgba(219, 193, 140, 0.40) inset;
+    box-shadow: 0 0 8px 1px rgba(219, 193, 140, 0.40);
 }
 
 .fStyle2 p {
     color: #B4975A;
     font-size: 13px;
+    width: 90%;
+    height: 90%;
+    border-radius: 100%;
+    position: relative;
+    margin: 0 auto;
+    background-image: linear-gradient(-211deg, #F3EAD4 2%, #E9D8B3 97%);
+    padding-top: 17%;
 
 }
 
@@ -214,44 +228,90 @@ ul.circleWrapper li {
 
 .circleBox .details {
     position: absolute;
-    left:20px;
+    left: 20px;
     right: 20px;
     top: 50px;
     bottom: 50px;
-    margin:0 auto;
+    margin: 0 auto;
     border-radius: 8px;
     background: #fff;
     color: #444;
     z-index: 100;
     overflow: hidden;
 }
-.details-head{
+
+.details-head {
     font-size: 16px;
-    background: #eee;
-    height: 48px;
-    line-height: 48px;
+    height: 50px;
+    line-height: 50px;
     position: relative;
-}
-.details-head .glyphicon-remove{
-    position: absolute;
-    right: 20px;
-    top:50%;
-    transform: translateY(-50%);
-}
-.list-wrapper{
-    max-height: 90%;
-    overflow: auto;
-    padding-top:10px;
-}
-.list-wrapper .list-title{
-    font-size: 16px;
-    margin-bottom: 16px;
+    background-image: linear-gradient(-45deg, #DDC490 0%, #A68848 100%);
+    border-radius: 4px 4px 0px 0px;
 }
 
-.circleFeature span {
-    vertical-align: middle;
-    display: inline-block;
+.details-head .glyphicon-remove {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
 }
+
+.list-wrapper {
+    max-height: 90%;
+    width: 88%;
+    margin:0 auto;
+    overflow: auto;
+    padding-top: 10px;
+}
+
+.list-wrapper .list-title {
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: #333333;
+    letter-spacing: 0.88px;
+    margin-bottom: 4px;
+    font-weight: 600;
+}
+.list-wrapper ul{
+    margin-bottom: 12px;
+    letter-spacing: 0.88px;
+    color:#555;
+}
+.list-wrapper ul li{
+    position: relative;
+    padding-left:10px;
+    line-height: 22px;
+}
+.list-wrapper ul li::before{
+    position: absolute;
+    left:0;
+    top:0;
+    content:"•";
+    display: block;
+}
+
+.content-1 .good-present {
+    position: absolute;
+    top: 0px;
+    right: -20px;
+    display: block;
+    background: url(../images/Rectangle1.png) no-repeat center center;
+    padding: 0 6px;
+    background-size: 100% 100%;
+    font-size: 10px;
+}
+
+.content-3 .good-present {
+    position: absolute;
+    top: 0px;
+    right: -20px;
+    display: block;
+    background: url(../images/Rectangle.png) no-repeat center center;
+    padding: 0 6px;
+    background-size: 100% 100%;
+    font-size: 10px;
+}
+
 .circle2 {
     box-sizing: border-box;
 }
@@ -269,10 +329,12 @@ ul.circleWrapper li {
     border-radius: 50%;
     padding: 15% 22px;
 }
+
+
 .inner-circle {
     position: absolute;
-    width: 35%;
-    height: 35%;
+    width: 42%;
+    height: 42%;
     margin: auto;
     border-radius: 100%;
     overflow: hidden;
@@ -280,19 +342,26 @@ ul.circleWrapper li {
     left: 0;
     top: 32%;
     text-align: center;
-    background: #FFFFFF;
-    box-shadow: 0 0 8px 1px rgba(178, 158, 114, 0.55);
-}
-.inner-circle>p{
-    position: absolute;
-    top:50%;
-    left:50%;
-    width: 100%;
-    transform: translate(-50%,-50%);
-    color:#B4975A;
+    z-index: 1;
+    background: url(../images/circle.png) no-repeat center center;
+    background-size: 100%;
 
 }
-.inner-animation{
+
+.inner-circle>p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    color: #B4975A;
+    font-weight: 600;
+    font-size: 15px;
+    z-index: 1000;
+
+}
+
+.inner-animation {
     -webkit-animation: grow 0.5s;
     animation: grow 0.5s;
 }
@@ -332,74 +401,85 @@ ul.circleWrapper li {
         transform: scale(1);
     }
 }
-/* 选中的样式 */
-/* .circleSelect {
-    padding: 6px;
-    box-sizing: content-box;
-  } */
+
 
 /* 底部 */
-.common-footer{
+.common-footer {
     position: fixed;
-    bottom:0px;
+    bottom: 0px;
     height: 48px;
     line-height: 48px;
     width: 100%;
-    bottom:15px;
+    bottom: 20px;
 }
-.common-footer .common-btn{
+
+.common-footer .common-btn {
     display: block;
     width: 100%;
     height: 100%;
     background: #000000;
+    background-size: 100%;
     border-radius: 4px;
     text-align: center;
-    font-size:16px;
-    color:#fff;
+    font-size: 16px;
+    color: #fff;
     letter-spacing: 1px;
     text-decoration: none;
-    
-   
+    box-shadow: 0 5px 10px 1px rgba(64, 64, 64, .26);
+
+
 }
 
 /* 适配 */
 @media screen and (max-width: 320px) {
-    .swiper-card{
-        margin-top:7%;
+    .swiper-card {
+        margin-top: 7%;
     }
-    .common-footer{
+
+    .common-footer {
         height: 40px;
         line-height: 40px;
-        bottom:12px;
+        bottom: 12px;
     }
-    .person-level{
-        margin-top:-2%;
+
+    .person-level {
+        margin-top: -2%;
     }
-    .circleWrapper{
-        margin-top:30px;
+
+    .circleWrapper {
+        margin-top: 30px;
         width: 72%;
     }
 }
 
-@media only screen and (width: 375px) and (height:812px)  { 
-    .person-level .icon img{
+@media only screen and (width: 375px) and (height:812px) {
+    .person-level .icon img {
         width: 65px;
         height: 65px;
     }
-    .person-level{
-        margin-top:2%;
+
+    .person-level {
+        margin-top: 2%;
     }
-    .swiper-card{
-        margin-top:14%;
+
+    .swiper-card {
+        margin-top: 14%;
     }
-    .content-1 .header{
-        margin-top:12% ;
+
+    .content-1 .header {
+        margin-top: 12%;
     }
-    .circleWrapper{
-        margin-top:60px;
+
+    .circleWrapper {
+        margin-top: 60px;
         width: 75%;
     }
-    .common-footer{
-        bottom:30px;
+
+    .common-footer {
+        bottom: 30px;
     }
- }
+
+    .rights-content .header {
+        padding-top: 8%;
+    }
+}
