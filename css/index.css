@@ -31,7 +31,7 @@ html {
     flex-direction: row;
     align-items: center;
     padding-left: 12%;
-    margin-top: 1%;
+    margin-top: -5px;
 }
 
 .person-level .icon img {
@@ -248,31 +248,13 @@ ul.circleWrapper li {
     margin-bottom: 16px;
 }
 
-/* 
-ul.circleWrapper li:first-child .circleBox {
-    display: block;
-} */
-
-/* .circleSelect {
-    padding: 6px;
-    box-sizing: content-box;
-} */
-
 .circleFeature span {
     vertical-align: middle;
     display: inline-block;
 }
-
-
-
 .circle2 {
     box-sizing: border-box;
 }
-
-/* .fStyle2 {
-    background: #fff;
-    border: 2px dotted #aaa;
-} */
 
 .wStyle2 {
     border: 2px dotted #aaa;
@@ -287,45 +269,6 @@ ul.circleWrapper li:first-child .circleBox {
     border-radius: 50%;
     padding: 15% 22px;
 }
-
-.innerStyle3 {
-    font-size: 25px;
-    font-weight: 900;
-}
-
-.circleSelect3 {
-    background-color: #bf1e2c;
-}
-
-.fStyle4 {
-    background-color: #00b786;
-    color: #fff;
-}
-
-.fStyle4 span {
-    font-size: 23px;
-}
-
-.wStyle4 {
-    border: 2px solid #00b786;
-}
-
-.circleSelect4:after {
-    content: "";
-    width: 80%;
-    height: 80%;
-    border: 2px solid #fff;
-    position: absolute;
-    z-index: 999;
-    border-radius: 50%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-}
-
-
 .inner-circle {
     position: absolute;
     width: 35%;
@@ -339,10 +282,7 @@ ul.circleWrapper li:first-child .circleBox {
     text-align: center;
     background: #FFFFFF;
     box-shadow: 0 0 8px 1px rgba(178, 158, 114, 0.55);
-    -webkit-animation: grow 0.5s;
-    animation: grow 0.5s;
 }
-
 .inner-circle>p{
     position: absolute;
     top:50%;
@@ -351,6 +291,10 @@ ul.circleWrapper li:first-child .circleBox {
     transform: translate(-50%,-50%);
     color:#B4975A;
 
+}
+.inner-animation{
+    -webkit-animation: grow 0.5s;
+    animation: grow 0.5s;
 }
 
 @-webkit-keyframes grow {
@@ -388,3 +332,74 @@ ul.circleWrapper li:first-child .circleBox {
         transform: scale(1);
     }
 }
+/* 选中的样式 */
+/* .circleSelect {
+    padding: 6px;
+    box-sizing: content-box;
+  } */
+
+/* 底部 */
+.common-footer{
+    position: fixed;
+    bottom:0px;
+    height: 48px;
+    line-height: 48px;
+    width: 100%;
+    bottom:15px;
+}
+.common-footer .common-btn{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    border-radius: 4px;
+    text-align: center;
+    font-size:16px;
+    color:#fff;
+    letter-spacing: 1px;
+    text-decoration: none;
+    
+   
+}
+
+/* 适配 */
+@media screen and (max-width: 320px) {
+    .swiper-card{
+        margin-top:7%;
+    }
+    .common-footer{
+        height: 40px;
+        line-height: 40px;
+        bottom:12px;
+    }
+    .person-level{
+        margin-top:-2%;
+    }
+    .circleWrapper{
+        margin-top:30px;
+        width: 72%;
+    }
+}
+
+@media only screen and (width: 375px) and (height:812px)  { 
+    .person-level .icon img{
+        width: 65px;
+        height: 65px;
+    }
+    .person-level{
+        margin-top:2%;
+    }
+    .swiper-card{
+        margin-top:14%;
+    }
+    .content-1 .header{
+        margin-top:12% ;
+    }
+    .circleWrapper{
+        margin-top:60px;
+        width: 75%;
+    }
+    .common-footer{
+        bottom:30px;
+    }
+ }
