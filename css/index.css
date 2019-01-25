@@ -59,7 +59,7 @@ html {
 }
 
 .swiper-card {
-    margin: 8% 0 5%;
+    margin: 10% 0 5%;
 }
 
 .swiper-container {
@@ -74,7 +74,7 @@ html {
 .swiper-slide {
     text-align: center;
     /* font-size: 18px; */
-    background: #fff;
+    /* background: #fff; */
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -89,18 +89,27 @@ html {
     align-items: center;
     -webkit-transition: transform 1s;
     transition: transform 1s;
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
-    box-shadow: 0 9px 16px 0px rgba(185, 185, 185, 0.51);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+   
+    /* overflow: hidden; */
+    border-radius: 4px;
 
 
 }
 
 .swiper-slide.swiper-slide-active {
-    -webkit-transform: scale(1.6);
-    transform: scale(1.6);
-
-
+    -webkit-transform: scale(1.8);
+    transform: scale(1.8);
+    margin-top:2px;
+    /* overflow: hidden; */
+}
+.swiper-slide img{
+    width: 80%;
+    box-shadow: 0 9px 16px 0px rgba(185, 185, 185, 0.51);
+}
+.swiper-slide.swiper-slide-active img{
+    width: 72%;
 }
 
 .card-title {
@@ -113,27 +122,28 @@ html {
     color: #333;
 }
 
-.swiper-card img {
-    width: 105%;
+/* .swiper-card img {
+    width: 120%;
     height: 110%;
-}
+} */
 
 
 .rights-content .header {
     font-size: 11px;
     color: #999;
     margin-top: 4%;
+    margin-bottom: 2%;
 }
 
 
 /* 整个弹框最外层 */
 
 .circleWrapper {
-    width: 70%;
-    height: 70%;
+    width: 64%;
+    height: 64%;
     border-radius: 100%;
     position: relative;
-    margin: 40px auto;
+    margin: 40px auto 30px;
 }
 
 ul.circleWrapper {
@@ -163,8 +173,8 @@ ul.circleWrapper li {
     -o-transition: all 0.8s;
     transition: all 0.8s;
     z-index: 2;
-    width: 25%;
-    height: 25%;
+    width: 30%;
+    height: 30%;
     line-height: 20px !important;
 }
 
@@ -192,10 +202,10 @@ ul.circleWrapper li {
 .fStyle2 {
     color: #fff;
     font-weight: 600;
-    /* overflow: hidden; */
+    /* overflow-y: hidden; */
     border: 1px solid #DAC28E;
-    width: 30%;
-    height: 30%;
+    width: 33%;
+    height: 33%;
     box-shadow: 0 0 8px 1px rgba(219, 193, 140, 0.40);
 }
 
@@ -333,14 +343,14 @@ ul.circleWrapper li {
 
 .inner-circle {
     position: absolute;
-    width: 42%;
-    height: 42%;
+    width: 48%;
+    height: 48%;
     margin: auto;
     border-radius: 100%;
     overflow: hidden;
     right: 0;
     left: 0;
-    top: 32%;
+    top: 30%;
     text-align: center;
     z-index: 1;
     background: url(../images/circle.png) no-repeat center center;
@@ -448,8 +458,18 @@ ul.circleWrapper li {
 
     .circleWrapper {
         margin-top: 30px;
-        width: 72%;
+        width: 66%;
     }
+    .fStyle2 p{
+        font-size: 12px;
+    }
+    .inner-circle>p{
+        font-size: 14px;
+    }
+    /* .circleFeature{
+        width: 30%;
+        height: 30%;;
+    } */
 }
 
 @media only screen and (width: 375px) and (height:812px) {
@@ -459,7 +479,7 @@ ul.circleWrapper li {
     }
 
     .person-level {
-        margin-top: 2%;
+        margin-top: 3%;
     }
 
     .swiper-card {
@@ -483,3 +503,36 @@ ul.circleWrapper li {
         padding-top: 8%;
     }
 }
+@media screen and (width: 768px){
+    .swiper-slide.swiper-slide-active img{
+        width: 65%;
+    }
+    .swiper-slide img{
+        width: 60%;
+    }
+    .circleWrapper{
+        width: 48%;
+    } 
+    .rights-content .header{
+        padding:2% 0 !important;
+    }
+}
+@media screen and (min-width: 1024px){
+    .swiper-slide.swiper-slide-active img{
+        width: 68%;
+    }
+    .swiper-slide img{
+        width: 60%;
+    }
+    .circleWrapper{
+        width: 50%;
+    }
+    .rights-content .header {
+        padding:3% 0;
+    }
+    .common-footer{
+        height: 56px;
+        line-height: 56px;
+    }
+}
+

@@ -1,5 +1,4 @@
 (function ($) {
-    console.log($);
     $.fn.s8CircleInfoBox = function (options) {
         // set settings
         var settings = $.extend({
@@ -99,16 +98,10 @@
         }
         // On hover over particular circle
         $fields.on(settings.action,function () {
-            // if (current != $(this).parent().index() && !underBreakPoint) {
-            //     $infoBox.fadeOut();
-            //     current = $(this).parent().index();
-            // inflate($(this));
-            // }
-            if (current != !underBreakPoint) {
-                $infoBox.fadeOut();
-                current = $(this).parent().index();
+            $infoBox.fadeOut();
+            current = $(this).parent().index();
             inflate($(this));
-            }
+            console.log(current);
         });
 
 
@@ -144,29 +137,11 @@
     })
 })(jQuery);
 
-window.onload = function () {
-    // var swiper = new Swiper('.swiper-container', {
-    //     autoplay: false,
-    //     speed: 1000,
-    //     autoplayDisableOnInteraction: false,
-    //     loop: true,
-    //     centeredSlides: true,
-    //     slidesPerView: 2,
-    //     pagination: '.swiper-pagination',
-    //     paginationClickable: true,
-    //     breakpoints: {
-    //         668: {
-    //             slidesPerView: 1,
-    //         }
-    //     }
-    // });
-
-
-
+$(function(){
     var mySwiper = new Swiper('.swiper-container', {
-        slidesPerView: '2',
+        slidesPerView: 1.5,
         centeredSlides: true,
-        spaceBetween: 80,
+        spaceBetween: 70,
         autoplayDisableOnInteraction: false,
         loop: true,
         pagination: {
@@ -174,10 +149,11 @@ window.onload = function () {
         },
         on: {
             slideChangeTransitionEnd: function () {
-                if (this.activeIndex == 2 || this.activeIndex == 5) {
+                console.log(this.activeIndex);
+                if (this.activeIndex == 1 || this.activeIndex == 4) {
                     $(".rights-content>div").hide();
                     $(".rights-content").find(".content-1").show();
-                } else if (this.activeIndex == 3) {
+                } else if (this.activeIndex == 2) {
                     $(".rights-content>div").hide();
                     $(".rights-content").find(".content-2").show();
                      $(".inner-circle").removeClass("inner-animation");
@@ -189,8 +165,14 @@ window.onload = function () {
             },
         }, 
     });
+})
 
-}
+
+
+
+
+
+
 
 $(".inner-circle").addClass("inner-animation");
 $(".circle1").s8CircleInfoBox()
