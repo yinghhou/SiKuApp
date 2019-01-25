@@ -141,6 +141,8 @@ $(function () {
 // 跳转页面
 $(".swiper-card img").on("click",function(){
     window.location.href="list.html"
+    var currentIndex=$(this).attr("data-index");
+    localStorage.setItem("currentIndex",currentIndex)
 })
 
 })
