@@ -15,18 +15,6 @@
 			<a href="index.html"><span class="back glyphicon glyphicon-menu-left"></span></a>
 			<p>开户成功权益</p>
 		</div>
-		<div class=" list-body panel-group" id="accordion">
-			<div class="collapse-block">
-				<p class="skip">活动条款及权益</p>
-				<span class="right glyphicon glyphicon-menu-right"></span>
-			</div>
-
-			<div class="collapse-block panel panel-default">
-				<div class="title panel-heading" data-parent="#accordion" data-toggle="collapse" data-target="#collapseOne">
-					<p class="panel-title">
-						6个月专属权益—全方位财富管理
-					</p>
-					<span class="view-more glyphicon glyphicon-menu-down"></span>
 
 			<div class=" list-body panel-group" id="accordion">
 				<div class="collapse-block">
@@ -59,6 +47,7 @@
 						</div>
 					</div>
 
+
 				</div>
 				<div id="collapseOne" class="panel-collapse collapse">
 					<div class="panel-body">
@@ -71,7 +60,7 @@
 						</ul>
 					</div>
 				</div>
-			</div>
+			
 			<div class="collapse-block panel panel-default">
 				<div class="title panel-heading" data-parent="#accordion" data-toggle="collapse" data-target="#collapseTwo">
 					<p class="panel-title">
@@ -218,6 +207,13 @@
 	<script src="js/bootstrap.min.js"> </script>
 	<script>
 		$(function () {
+
+			// 获取当前index;
+			var currentIndex=localStorage.getItem("currentIndex");
+			console.log(currentIndex);
+
+
+
 			$('.collapse').on('show.bs.collapse', function () {
 				var item = $(this).prev().find("span");
 				$(item).css({
