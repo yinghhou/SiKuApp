@@ -30,6 +30,7 @@
             $container.addClass("noResponsive");
         }
         // make the cyrcle
+        // $fields.css({"display":'none'});
         var makeCircle = function () {
             var angle = 0;
             switch (spreadStyle) {
@@ -50,14 +51,23 @@
             $container.css("height", $container.width());
             radius = $container.width() / 2;
             $fields.css("lineHeight", $fields.height() + "px");
-            $fields.each(function () {
+            $fields.each(function (index) {
                 var $this = $(this);
                 $this.css({
+                   
+                    "display":'block',
                     'transform': 'rotate(' + angle + 'deg) translate(' + radius + 'px) rotate(' + (-1 * angle) + 'deg)'
+
                 })
 
                 angle += step;
             })
+            // $fields.hide();
+            // setTimeout(function(){
+            //     $fields.fadeIn();
+                
+            // },1000);
+
         };
         // 判断第几个显示
         var boxId;
@@ -146,17 +156,17 @@ $(".swiper-card img").on("click",function(){
 })
 
 })
-
-$(".inner-circle").addClass("inner-animation");
 $(".circle1").s8CircleInfoBox()
-$(".circle2").s8CircleInfoBox({
-    autoSlide: false,
-    action: "click"
-})
-$(".circle3").s8CircleInfoBox({
-    notResponsive: true,
-    hoverStyle: "circleSelect3",
-    slideSpeed: 500,
-    breakpoint: 0
+// $(".inner-circle").addClass("inner-animation");
+// $(".circle1").s8CircleInfoBox()
+// $(".circle2").s8CircleInfoBox({
+//     autoSlide: false,
+//     action: "click"
+// })
+// $(".circle3").s8CircleInfoBox({
+//     notResponsive: true,
+//     hoverStyle: "circleSelect3",
+//     slideSpeed: 500,
+//     breakpoint: 0
 
-})
+// })

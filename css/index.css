@@ -178,6 +178,11 @@ ul.circleWrapper li {
     /* background: #fff; */
 }
 
+.circle1  li:nth-child(3) .circleFeature{
+    transition-delay: 0.12s;
+    transform: rotate(555deg);
+}
+
 /* 圆样式 */
 .fStyle1 {
     background-color: #fff;
@@ -191,23 +196,22 @@ ul.circleWrapper li {
 .fStyle2 {
     color: #fff;
     font-weight: 600;
-    /* overflow-y: hidden; */
-    border: 1px solid #DAC28E;
-    width: 33%;
-    height: 33%;
-    box-shadow: 0 0 8px 1px rgba(219, 193, 140, 0.40);
+    width: 45%;
+    height: 45%;
+    background: url(../images/light.gif) no-repeat center center;
+    background-size:100% 100%;
 }
-
 .fStyle2 p {
     color: #B4975A;
     font-size: 13px;
     width: 90%;
     height: 90%;
-    border-radius: 100%;
+    /* border-radius: 100%; */
     position: relative;
     margin: 0 auto;
-    background-image: linear-gradient(-211deg, #F3EAD4 2%, #E9D8B3 97%);
-    padding-top: 17%;
+    /* background: url(../images/light.gif) no-repeat center center; */
+    /* background-image: linear-gradient(-211deg, #F3EAD4 2%, #E9D8B3 97%); */
+    padding-top: 25%;
 
 }
 
@@ -293,22 +297,23 @@ ul.circleWrapper li {
 
 .good-present {
     position: absolute;
-    top: 0px;
-    right: -20px;
+    top: 11px;
+    right: 12px;
     display: block;
-    background: url(../images/Rectangle1.png) no-repeat center center;
-    padding: 0 6px;
     background-size: 100% 100%;
     font-size: 10px;
+    width: 36px;
 }
-
+.good-present img{
+    width: 100%;
+}
 .good-present.present-2 {
     position: absolute;
-    top: 0px;
-    right: -20px;
-    display: block;
-    background: url(../images/Rectangle.png) no-repeat center center;
-    padding: 0 6px;
+    /* top: 0px;
+    right: -20px; */
+    /* display: block; */
+    /* background: url(../images/Rectangle.png) no-repeat center center;
+    padding: 0 6px; */
     background-size: 100% 100%;
     font-size: 10px;
 }
@@ -346,7 +351,9 @@ ul.circleWrapper li {
     z-index: 1;
     background: url(../images/circle.png) no-repeat center center;
     background-size: 100%;
-
+    -webkit-animation: grow 1.2s;
+    animation: grow 1.2s;
+    z-index: 10;
 }
 
 .inner-circle>p {
@@ -360,11 +367,6 @@ ul.circleWrapper li {
     font-size: 15px;
     z-index: 1000;
 
-}
-
-.inner-animation {
-    -webkit-animation: grow 0.5s;
-    animation: grow 0.5s;
 }
 
 @-webkit-keyframes grow {
@@ -448,7 +450,7 @@ ul.circleWrapper li {
 
     .fStyle2 p {
         font-size: 12px;
-        padding-top: 14%;
+        padding-top: 15%;
     }
 
     .inner-circle>p {
@@ -505,6 +507,9 @@ ul.circleWrapper li {
     .rights-content .header {
         padding: 2% 0 !important;
     }
+    .fStyle2 p{
+        padding-top:30%;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -521,4 +526,8 @@ ul.circleWrapper li {
         height: 56px;
         line-height: 56px;
     }
+    .fStyle2 p{
+        padding-top:30%;
+    }
+}
 }
