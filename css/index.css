@@ -74,8 +74,6 @@ html {
 
 .body-siku .swiper-slide {
     text-align: center;
-    /* font-size: 18px; */
-    /* background: #fff; */
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -90,10 +88,6 @@ html {
     align-items: center;
     -webkit-transition: transform 1s;
     transition: transform 1s;
-    /* -webkit-transform: scale(1.5);
-    transform: scale(1.5); */
-
-    /* overflow: hidden; */
     border-radius: 4px;
 
 

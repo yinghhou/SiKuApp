@@ -1,7 +1,8 @@
 body{font-family: PingFangSC-Regular;}
-.siku-wrapper{
+.siku-list{
 	width: 100%;
 }
+
 .header{
 	position: fixed;
 	height: 50px;
@@ -10,11 +11,13 @@ body{font-family: PingFangSC-Regular;}
 	z-index: 10;
 	background-color: #eeeeee;
 }
-.back{
+.siku-list .back{
 	position: absolute;
 	top: 50%;
 	left: 10px;
 	margin-top: -7px;
+	color:#333;
+	font-size: 16px;
 }
 .header>p{
 	width: 100%;

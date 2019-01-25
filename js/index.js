@@ -135,14 +135,15 @@ $(function () {
             },
         },
     });
+
+
+
+// 跳转页面
+$(".swiper-card img").on("click",function(){
+    window.location.href="list.html"
 })
 
-
-
-
-
-
-
+})
 
 $(".inner-circle").addClass("inner-animation");
 $(".circle1").s8CircleInfoBox()
