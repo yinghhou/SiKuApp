@@ -21,7 +21,7 @@ html {
 
 .nav {
     position: relative;
-    left:15px;
+    left: 15px;
 }
 
 .nav .glyphicon {
@@ -74,7 +74,7 @@ html {
     background: transparent;
     padding: 3% 0 6%;
     margin-top: -2px;
-    
+
 }
 
 .body-siku .swiper-slide {
@@ -97,6 +97,7 @@ html {
     -webkit-transform: scale(.95);
     transform: scale(.95);
 }
+
 .body-siku .swiper-slide img {
     width: 68%;
     border-radius: 8px;
@@ -109,6 +110,7 @@ html {
     transform: scale(1.05);
     z-index: 1002;
 }
+
 .card-title {
     font-size: 16px;
     color: #272727;
@@ -122,7 +124,7 @@ html {
 .rights-content .header {
     font-size: 11px;
     color: #999;
-    margin-top: -15px;
+    margin-top: -5%;
     margin-bottom: 1%;
 
 }
@@ -279,10 +281,23 @@ ul.circleWrapper li {
     font-weight: 600;
 }
 
+.list-wrapper .list-title.gift {
+    font-size: 16px;
+    color: #B4975A;
+    margin: 7px 0;
+}
+
+.list-wrapper .gray {
+    font-size: 12px;
+    color: #666;
+    position: relative;
+    top:-6px;
+}
+
 .list-wrapper ul {
     margin-bottom: 12px;
     letter-spacing: 0.88px;
-    color: #555;
+    color: #333;
 }
 
 .list-wrapper ul li {
@@ -344,8 +359,8 @@ ul.circleWrapper li {
 
 .inner-circle {
     position: absolute;
-    width: 48%;
-    height: 48%;
+    width: 50%;
+    height: 50%;
     margin: auto;
     border-radius: 100%;
     overflow: hidden;
@@ -366,11 +381,15 @@ ul.circleWrapper li {
     top: 50%;
     left: 50%;
     width: 100%;
+    /* height: 100%; */
     transform: translate(-50%, -50%);
     color: #B4975A;
     font-weight: 600;
     font-size: 15px;
     z-index: 1000;
+    /* background: pink; */
+    overflow: hidden;
+    /* margin: 0 !important; */
 
 }
 
@@ -382,7 +401,6 @@ ul.circleWrapper li {
         -ms-transform: scale(0);
         transform: scale(0);
     }
-
     100% {
         -webkit-transform: scale(1);
         -moz-transform: scale(1);
@@ -443,9 +461,11 @@ ul.circleWrapper li {
         line-height: 40px;
         bottom: 12px;
     }
-    .body-siku .swiper-slide img{
+
+    .body-siku .swiper-slide img {
         width: 64%;
     }
+
     .person-level {
         margin-top: -2%;
     }
@@ -475,7 +495,7 @@ ul.circleWrapper li {
     }
 }
 
-@media only screen and (width: 375px) and (height:812px) {
+@media only screen and (width: 375px) and (min-height:812px) {
     .person-level .icon img {
         width: 65px;
         height: 65px;
