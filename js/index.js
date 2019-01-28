@@ -119,7 +119,7 @@ $(function () {
     var mySwiper = new Swiper('.swiper-container', {
         slidesPerView: 'auto',
         centeredSlides: true,
-        spaceBetween: -60,
+        spaceBetween: -100,
         autoplayDisableOnInteraction: false,
         loop: true,
         pagination: {

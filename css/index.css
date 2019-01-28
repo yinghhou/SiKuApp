@@ -21,6 +21,7 @@ html {
 
 .nav {
     position: relative;
+    left:15px;
 }
 
 .nav .glyphicon {
@@ -69,7 +70,11 @@ html {
     display: flex;
     -webkit-align-items: center;
     align-items: center;
-    overflow: visible;
+    overflow: hidden;
+    background: transparent;
+    padding: 9px 0 20px;
+    margin-top: -2px;
+    
 }
 
 .body-siku .swiper-slide {
@@ -86,29 +91,32 @@ html {
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
-    -webkit-transition: transform 1s;
-    transition: transform 1s;
-    border-radius: 4px;
+    -webkit-transition: transform 1.2s;
+    transition: transform 1.2s;
+    position: relative;
+    -webkit-transform: scale(.95);
+    transform: scale(.95);
+  
+    
+    /* margin-top: 70px; */
+    /* margin-bottom: 70px; */
+   
+    /* border-radius: 4px; */
 
 
 }
-
-.body-siku .swiper-slide.swiper-slide-active {
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
-    margin-top: 2%;
-    /* overflow: hidden; */
-}
-
 .body-siku .swiper-slide img {
-    width: 74%;
+    width: 70%;
+    border-radius: 8px;
+    overflow: hidden;
     box-shadow: 0 9px 16px 0px rgba(185, 185, 185, 0.51);
 }
 
-.body-siku .swiper-slide.swiper-slide-active img {
-    width: 65%;
+.body-siku .swiper-slide.swiper-slide-active {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+    z-index: 1002;
 }
-
 .card-title {
     font-size: 16px;
     color: #272727;
@@ -122,9 +130,11 @@ html {
 .rights-content .header {
     font-size: 11px;
     color: #999;
-    margin-top: 0;
+    margin-top: -15px;
     margin-bottom: 1%;
+
 }
+
 /* 整个弹框最外层 */
 
 .circleWrapper {
@@ -178,7 +188,7 @@ ul.circleWrapper li {
     /* background: #fff; */
 }
 
-.circle1  li:nth-child(3) .circleFeature{
+.circle1 li:nth-child(3) .circleFeature {
     transition-delay: 0.12s;
     transform: rotate(555deg);
 }
@@ -199,8 +209,9 @@ ul.circleWrapper li {
     width: 45%;
     height: 45%;
     background: url(../images/light.gif) no-repeat center center;
-    background-size:100% 100%;
+    background-size: 100% 100%;
 }
+
 .fStyle2 p {
     color: #B4975A;
     font-size: 13px;
@@ -304,9 +315,11 @@ ul.circleWrapper li {
     font-size: 10px;
     width: 36px;
 }
-.good-present img{
+
+.good-present img {
     width: 100%;
 }
+
 .good-present.present-2 {
     position: absolute;
     /* top: 0px;
@@ -507,8 +520,9 @@ ul.circleWrapper li {
     .rights-content .header {
         padding: 2% 0 !important;
     }
-    .fStyle2 p{
-        padding-top:30%;
+
+    .fStyle2 p {
+        padding-top: 30%;
     }
 }
 
@@ -526,8 +540,8 @@ ul.circleWrapper li {
         height: 56px;
         line-height: 56px;
     }
-    .fStyle2 p{
-        padding-top:30%;
+
+    .fStyle2 p {
+        padding-top: 30%;
     }
-}
 }
