@@ -2,7 +2,9 @@ body{font-family: PingFangSC-Regular;}
 .siku-list{
 	width: 100%;
 }
-
+.heavy{
+	font-weight: bolder;
+}
 .header{
 	position: fixed;
 	height: 50px;
@@ -30,7 +32,7 @@ body{font-family: PingFangSC-Regular;}
 .list-body{
 	width: 100%;
 	margin-top: 60px;
-	margin-bottom: 70px;
+	margin-bottom: 80px;
 }
 .collapse-block{
 	width: 90%;
@@ -38,6 +40,7 @@ body{font-family: PingFangSC-Regular;}
 	border: none;
 	position: relative;
 	box-shadow: none !important;
+	background-color: rgb(255,255,255,0);
 }
 .skip{
 	line-height: 30px;
@@ -54,7 +57,7 @@ body{font-family: PingFangSC-Regular;}
 .title{
 	position: relative;
 	/*height: 30px;*/
-	background-color: #eeeeee !important;
+	background-color: rgb(255,255,255,0) !important;
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
 	border: none;
@@ -65,7 +68,7 @@ body{font-family: PingFangSC-Regular;}
 }
 .panel-body{
 	border-top: none !important;
-	background-color: #f7f7f7;
+	background-color: rgb(255,255,255,0);
 	border-bottom-left-radius: 5px;
 	border-bottom-right-radius: 5px;
 }
@@ -75,6 +78,17 @@ body{font-family: PingFangSC-Regular;}
 	font-size: 14px;
 	letter-spacing: 0.88px;
 	margin-bottom: 6px;
+	font-weight: bolder;
+}
+.normal{
+	font-weight: normal !important;
+	padding-left: 30px !important;
+}
+.light{
+	font-size: 12px !important;
+	opacity: 0.5;
+	letter-spacing: 0 !important;
+	font-weight: normal !important; 
 }
 .panel-body>ul{
 	padding-left: 30px;
